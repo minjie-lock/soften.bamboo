@@ -4,6 +4,14 @@ _Bamboo integrates multiple features to make React Native coding experience soft
 
 _Bamboo 集成多种功能让 React Native 编码体验变得柔软_
 
+ ```bash
+   ____    _    __  __ ____   ___   ___
+  | __ )  / \  |  \/  | __ ) / _ \ / _ \
+  |  _ \ / _ \ | |\/| |  _ \| | | | | | |
+  | |_) / ___ \| |  | | |_) | |_| | |_| |
+  |____/_/   \_\_|  |_|____/ \___/ \___/
+ ```
+
 ## No import component
 
 _Bamboo_ 默认集成 @soften/react-native 基础组件，无需引入基础组件，且与 Web 端编码体验一致，基础组件非大写，例如 Button，Text，View，Image 等。
