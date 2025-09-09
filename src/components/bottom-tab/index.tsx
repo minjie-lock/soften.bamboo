@@ -12,22 +12,24 @@ export default function BottomTabs(props: BottomTabBarProps): React.ReactNode {
 
   const {
     state,
+    navigation,
+    insets,
   } = props;
 
-  const onLink = () => {
-
-  };
-
   return (
-    <view>
+    <view className="flex flex-row justify-around h-[50px] items-center">
       {
         state.routes.map(route => {
           const onPress = () => {
-            onLink();
+            navigation.navigate(route.name);
           };
           return (
-            <view key={route.key}>
-              {/* <text>{state.routeNames}</text> */}
+            <view key={route.key} className="flex">
+              <touchable-opacity className="" onPress={onPress}>
+                <text className="dark:text-white">
+                  {route.name}
+                </text>
+              </touchable-opacity>
             </view>
           );
         })

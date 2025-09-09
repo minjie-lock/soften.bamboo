@@ -5,9 +5,11 @@
 import {
   createBottomTabNavigator
 } from '@react-navigation/bottom-tabs';
-import { Start } from '@/pages';
 import { BottomTabs } from '@/components';
+import { lazy } from 'react';
 
+const Docs = lazy(() => import('@/pages/docs'));
+const Start = lazy(() => import('@/pages/start'));
 
 /**
  * @constant {BottomTabNavigator}
@@ -26,6 +28,13 @@ const BottomTabNavigator = createBottomTabNavigator({
       },
       screen: Start,
     },
+    Docs: {
+      options: {
+        headerShown: false,
+        tabBarShowLabel: false,
+      },
+      screen: Docs,
+    }
   },
 });
 
