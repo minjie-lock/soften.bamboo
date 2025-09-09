@@ -1,23 +1,23 @@
-const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
-
 const figlet = require('figlet');
+const { getDefaultConfig, mergeConfig } = require("@react-native/metro-config");
+const { withNativeWind } = require("nativewind/metro");
+const { babelTransformerPath } = require('@soften/metro');
 
-figlet("BAMBOO", function(error, data) {
+
+figlet("BAMBOO", (error, data) => {
   if (error) {
-    console.log("Something went wrong...");
     console.dir(error);
     return;
   }
   console.log(data);
 });
 
+const config = mergeConfig(getDefaultConfig(__dirname), {
+  transformer: {
+    babelTransformerPath,
+  }
+});
 
-/**
- * Metro configuration
- * https://reactnative.dev/docs/metro
- *
- * @type {import('@react-native/metro-config').MetroConfig}
- */
-const config = {};
-
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+module.exports = withNativeWind(config, {
+  input: './src/styles/tailwind.css'
+});

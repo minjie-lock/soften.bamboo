@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "@soften/react-native": {
-      "signature": "a9c59e2de2741e92e416a7924a339475",
-      "file": true
-    }
-  }
-}

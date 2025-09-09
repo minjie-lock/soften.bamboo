@@ -2,7 +2,13 @@ import type {
   BottomTabBarProps,
 } from '@react-navigation/bottom-tabs';
 
-export default function BottomTabs(props: BottomTabBarProps) {
+/**
+ * @function BottomTabs
+ * @param props 
+ * @description 底部导航栏
+ * @returns {React.ReactNode}
+ */
+export default function BottomTabs(props: BottomTabBarProps): React.ReactNode {
 
   const {
     state,
@@ -21,7 +27,7 @@ export default function BottomTabs(props: BottomTabBarProps) {
           };
           return (
             <view key={route.key}>
-              <text>{state.routeNames}</text>
+              {/* <text>{state.routeNames}</text> */}
             </view>
           );
         })

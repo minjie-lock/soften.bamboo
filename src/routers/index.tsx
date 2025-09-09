@@ -1,6 +1,6 @@
-import {
-  createNativeStackNavigator
-} from "@react-navigation/native-stack";
+// import {
+//   createNativeStackNavigator
+// } from "@react-navigation/native-stack";
 
 import {
   createBottomTabNavigator
@@ -19,7 +19,13 @@ const BottomTabNavigator = createBottomTabNavigator({
   },
   tabBar: (props) => <BottomTabs {...props} />,
   screens: {
-    Start,
+    Start: {
+      options: {
+        headerShown: false,
+        tabBarShowLabel: false,
+      },
+      screen: Start,
+    },
   },
 });
 

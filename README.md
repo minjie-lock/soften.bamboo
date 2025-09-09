@@ -28,5 +28,17 @@ export default function Root() {
 
 ## Use Tailwind CSS
 
-_Bamboo_ 支持 通过 Tailwind CSS 快速开发，集成在 @soften/react-native 模块中，该功能由 NativeWind 提供。
+_Bamboo_ 支持 通过 Tailwind CSS 快速开发，集成 NativeWind 模块，告别繁琐的内联样式。
+
+## Use Payment Module
+
+_Bamboo_ 集成多种支付模块，让你快速集成支付功能。
+
+## Use Native Module
+
+_Bamboo_ 集成 Native 模块，让你快速集成原生功能。
+
+## Use Not Module
+
+
 

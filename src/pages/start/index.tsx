@@ -8,20 +8,23 @@
 export default function Start(): React.ReactNode {
 
   return (
-    <view className="flex flex-col">
-      <view className="flex flex-row">
-        <text className="dark:text-white">
-          Welcome use Soften
-        </text>
-        <text className="text-blue-500">
-          Bamboo
-        </text>
-      </view>
-      <view className="flex flex-col">
-        <view className="flex flex-row">
-          
+    <safe-area-view>
+      <status-bar />
+      <view className="flex flex-col p-5 bg-[#f5f5f5] dark:bg-[#151515] w-screen h-screen">
+        <view className="flex flex-col gap-2">
+          <text className="dark:text-white text-4xl font-bold">
+            Welcome use Soften
+          </text>
+          <text className="text-blue-500 text-4xl font-bold">
+            Bamboo
+          </text>
+        </view>
+        <view className="flex flex-col">
+          <view className="flex flex-row">
+
+          </view>
         </view>
       </view>
-    </view>
+    </safe-area-view>
   );
 };
